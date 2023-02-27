@@ -7,14 +7,14 @@ import {Fade} from "react-reveal";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
-    prof.hireable = "Yes";
+    prof.hireable = "teklifleriniz için müsaitim.";
   } else {
-    prof.hireable = "No";
+    prof.hireable = "tekliflerine kapalıyım.";
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
-        <h1 className="prof-title">Reach Out to me!</h1>
+        <h1 className="prof-title">İletişim</h1>
         <div className="row">
           <div className="main-content-profile">
             <div className="blog-header">
@@ -43,7 +43,7 @@ export default function GithubProfileCard({prof}) {
             )}
             <div className="opp-div">
               <span className="desc-prof">
-                Open for opportunities: {prof.hireable}
+                Şu an iş {prof.hireable}
               </span>
             </div>
             <SocialMedia />
